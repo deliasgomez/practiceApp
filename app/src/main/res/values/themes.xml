@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.PracticeApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="PracticeApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorApp</item>
         <item name="colorPrimaryVariant">@color/colorApp</item>
@@ -13,7 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="splashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_background</item>
+    <style name="splashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/colorApp</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_cdnlogo_com_imdbnew</item>
+        <item name="postSplashScreenTheme">@style/PracticeApp</item>
     </style>
 </resources>

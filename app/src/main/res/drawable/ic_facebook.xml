@@ -1,6 +1,6 @@
 <vector xmlns:tools="http://schemas.android.com/tools"
-    android:height="700dp" android:viewportHeight="700"
-    android:viewportWidth="700" android:width="700dp" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="48dp" android:viewportHeight="700"
+    android:viewportWidth="700" android:width="48dp" xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="VectorRaster">
     <path android:fillColor="#1877F2"
         android:pathData="m84.812,799.988c-7.561,0 -9.747,3.354 -9.747,10.75v12.27h20.169l-2.022,19.824H75.073v60.161H50.869V842.832H34.563V823.008H50.869v-11.934c0,-19.996 8.063,-30.559 30.559,-30.559a114.532,114.532 0,0 1,14.104 0.838v18.656z" android:strokeWidth="0.78355485"/>

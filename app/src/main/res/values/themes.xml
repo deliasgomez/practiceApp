@@ -18,4 +18,10 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_cdnlogo_com_imdbnew</item>
         <item name="postSplashScreenTheme">@style/PracticeApp</item>
     </style>
+    <style name="registroTheme" parent="PracticeApp">
+        <item name="colorPrimaryVariant">@color/colorApp</item>
+        <item name="colorPrimary">#9A9393</item>
+
+
+    </style>
 </resources>

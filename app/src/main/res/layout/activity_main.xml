@@ -105,6 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:backgroundTint="@color/white"
+            android:minHeight="48dp"
             android:src="@drawable/ic__apple"
             app:fabSize="mini"
             app:layout_constraintBottom_toBottomOf="@+id/loginFabFacebook"
@@ -125,7 +126,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/loginFabFacebook"
             app:layout_constraintStart_toEndOf="@id/loginFabFacebook"
             app:layout_constraintTop_toTopOf="@id/loginFabFacebook"
-            app:tint="@null" />
+            app:tint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/loginFabFacebook"
@@ -138,7 +140,8 @@
             app:layout_constraintEnd_toEndOf="@+id/loginTvOtherOptions"
             app:layout_constraintStart_toStartOf="@id/loginTvOtherOptions"
             app:layout_constraintTop_toBottomOf="@id/loginTvOtherOptions"
-            app:tint="@null" />
+            app:tint="@null"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginTvAsk"

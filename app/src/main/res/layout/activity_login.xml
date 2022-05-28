@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorApp"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/loginTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/loginImageOne"
@@ -20,7 +27,7 @@
             android:id="@+id/loginTvUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario"
+            android:text="@string/login_tv_user"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/loginImageOne"
             app:layout_constraintTop_toBottomOf="@+id/loginImageOne" />
@@ -45,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Contraseña"
+            android:text="@string/login_tv_pass"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/loginEtUser"
             app:layout_constraintTop_toBottomOf="@+id/loginEtUser" />
@@ -69,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="¿Olvidaste la contraseña?"
+            android:text="@string/login_tv_forgotten_pass"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="@+id/loginEtpass"
             app:layout_constraintTop_toBottomOf="@+id/loginEtpass" />
@@ -92,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Ó podes ingresar con"
+            android:text="@string/login_other_options"
             android:textSize="20sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="@+id/loginBtnLogin"
@@ -112,7 +119,8 @@
             app:layout_constraintEnd_toStartOf="@id/loginFabFacebook"
             app:layout_constraintTop_toTopOf="@+id/loginFabFacebook"
             app:tint="@null"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/login_botton_apple" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/loginFabgoogle"
@@ -127,7 +135,8 @@
             app:layout_constraintStart_toEndOf="@id/loginFabFacebook"
             app:layout_constraintTop_toTopOf="@id/loginFabFacebook"
             app:tint="@null"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/login_botton_google" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/loginFabFacebook"
@@ -141,14 +150,15 @@
             app:layout_constraintStart_toStartOf="@id/loginTvOtherOptions"
             app:layout_constraintTop_toBottomOf="@id/loginTvOtherOptions"
             app:tint="@null"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/login_botton_face" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginTvAsk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="¿No tienes cuenta? "
+            android:text="@string/login_tv_not_registered"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="@+id/loginFabApple"
             app:layout_constraintTop_toBottomOf="@+id/loginFabApple" />
@@ -157,7 +167,7 @@
             android:id="@+id/loginTvRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regístrate"
+            android:text="@string/login_to_register"
             android:textColor="@color/black"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="@+id/loginTvAsk"
@@ -169,7 +179,7 @@
             android:id="@+id/loginTvInvited"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continuar como invitado"
+            android:text="@string/login_to_continued_as_invited"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"
             android:textStyle="bold"

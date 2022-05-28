@@ -1,5 +1,28 @@
 <resources>
+
     <string name="app_name">practiceApp</string>
+
+    // recourses string types in LoginActivity
+
     <string name="buttonText">Login</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_tv_user">Usuario</string>
+    <string name="login_tv_pass">Contraseña</string>
+    <string name="login_tv_forgotten_pass"> </string>
+    <string name="login_other_options">Ó podes ingresar con</string>
+    <string name="login_botton_face">TODO</string>
+    <string name="login_botton_apple">TODO</string>
+    <string name="login_botton_google">TODO</string>
+    <string name="login_tv_not_registered">¿No tienes cuenta?</string>
+    <string name="login_to_register">Registrarse</string>
+    <string name="login_to_continued_as_invited">Continuar como invitado</string>
+
+    //recourses String types in RegistroActivity
+
+    <string name="registro_new_user">Crear una cuenta</string>
+    <string name="registro_new_user_name">Nombre</string>
+    <string name="registro_new_email">Correo electronico</string>
+    <string name="registro_new_pass">Contraseña</string>
+    <string name="registro_button_to_accept">Aceptar</string>
+
+
 </resources>

@@ -13,14 +13,19 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="splashTheme" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/colorApp</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_cdnlogo_com_imdbnew</item>
-        <item name="postSplashScreenTheme">@style/PracticeApp</item>
+
+    <style name="splashTheme" parent="PracticeApp">
+        <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
+
     <style name="registroTheme" parent="PracticeApp">
         <item name="colorPrimaryVariant">@color/colorApp</item>
         <item name="colorPrimary">#9A9393</item>
+    </style>
+    <style name="buscar_activity" parent="PracticeApp">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/colorApp</item>
+        <item name="colorOnPrimary">@color/black</item>
 
 
     </style>

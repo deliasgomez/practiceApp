@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/image_home"
+        android:title="Inicio" />
+
+    <item android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/image_search"
+        android:title="Buscar"/>
+
+    <item android:id="@+id/play"
+        android:enabled="true"
+        android:icon="@drawable/image_play"
+        android:title="play"/>
+
+    <item android:id="@+id/perfil"
+        android:enabled="true"
+        android:icon="@drawable/image_user"
+        android:title="Juan"/>
+
+
+</menu>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:opacity="opaque">
-    <item android:name="windowSplashScreenBackground"
-        tools:ignore="ExtraText">@color/colorApp</item>
-    <item android:drawable="@color/colorApp"/>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <bitmap android:src="@drawable/ic_cdnlogo_com_imdbnew"/>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorApp"/>
+        </shape>
     </item>
+    <item  android:drawable="@drawable/ic_cdnlogo_com_imdbnew"
+        android:gravity="center"/>
+
+
+
 
 </layer-list>

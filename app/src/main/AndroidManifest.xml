@@ -8,13 +8,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/splashTheme">
+        android:theme="@style/Theme.PracticeApp">
         <activity
-            android:name=".RegistroActivity"
-            android:theme="@style/registroTheme"
-            android:exported="false" />
+            android:name=".BuscarActivity"
+            android:exported="false"
+            android:theme="@style/buscar_activity"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityRegistro"
+            android:exported="false"
+            android:theme="@style/registroTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PracticeApp"></activity>
+        <activity
+            android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/splashTheme">
             <intent-filter>

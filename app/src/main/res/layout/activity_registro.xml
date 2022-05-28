@@ -4,23 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroActivity">
+    tools:context=".ActivityRegistro">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/registerBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_marginStart="@dimen/small_size"
+        android:layout_marginTop="@dimen/small_size"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/registerImageLogo"
         android:layout_width="149dp"
         android:layout_height="98dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/ic_cdnlogo_com_imdbnew"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/registerBack"/>
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/registerNewUser"
         android:layout_width="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Crear una cuenta "
+        android:textSize="@dimen/big_size"
+        android:text="@string/registro_new_user"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/registerImageLogo"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -30,8 +41,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="294dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
-        android:hint="Nombre"
+        android:layout_marginTop="@dimen/big_size"
+        android:hint="@string/registro_new_user_name"
         app:layout_constraintStart_toStartOf="@+id/registerNewUser"
         app:layout_constraintTop_toBottomOf="@+id/registerNewUser">
 
@@ -47,12 +58,13 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="294dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
-        android:hint="Correo electronico"
+        android:layout_marginTop="@dimen/big_size"
+        android:hint="@string/registro_new_email"
         app:layout_constraintStart_toStartOf="@+id/registerName"
         app:layout_constraintTop_toBottomOf="@+id/registerName">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerEtEmail"
             android:layout_width="match_parent"
             android:layout_height="45dp" />
 
@@ -61,14 +73,18 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/registerPass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="294dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="20dp"
-        android:hint="Contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_size"
+        android:hint="@string/registro_new_pass"
+        app:helperTextEnabled="true"
+        app:helperText="La contraseña debe contener 8 caracteres"
         app:layout_constraintStart_toStartOf="@+id/registerEmail"
-        app:layout_constraintTop_toBottomOf="@+id/registerEmail">
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtnAceptar">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerEtPass"
             android:layout_width="match_parent"
             android:layout_height="45dp" />
 
@@ -79,8 +95,8 @@
         android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/buttonEmptytext"
-        android:layout_marginTop="30dp"
-        android:text="Aceptar"
+        android:layout_marginTop="@dimen/big_size"
+        android:text="@string/registro_button_to_accept"
         app:layout_constraintStart_toStartOf="@+id/registerPass"
         app:layout_constraintTop_toBottomOf="@+id/registerPass"
 

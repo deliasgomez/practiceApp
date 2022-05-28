@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorApp">#F6C700</color>
     <color name="buttonEmptytext">#9D9C9C</color>
+    <color name="buttonFulltext">#4B4747</color>
+    <color name="buscar_edit_text">#F5F5F5</color>
+    <color name="bottom_no_selected">#4B4747</color>
 </resources>

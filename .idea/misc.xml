@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/border_button.xml" value="0.14635416666666667" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/enabled_color_botton.xml" value="0.1390625" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic__apple.xml" value="0.23796296296296296" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_cdnlogo_com_imdbnew.xml" value="0.2703125" />
@@ -20,6 +21,7 @@
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/menu_botton_nav.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/splash_background.xml" value="0.536" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/splasha_backgroud.xml" value="0.8" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/state_buttons.xml" value="0.14635416666666667" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/state_items_menu_navigation.xml" value="0.12222222222222222" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/style_border.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/style_botton_navigation.xml" value="0.2703125" />
@@ -28,8 +30,12 @@
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/activity_registro.xml" value="0.2" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/activity_splash.xml" value="0.13020833333333334" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/fragment_home.xml" value="0.13020833333333334" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/fragment_login.xml" value="0.16" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/fragment_play.xml" value="0.13020833333333334" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/fragment_search.xml" value="0.21875" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/fragment_splash.xml" value="0.2" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/fragment_user.xml" value="0.13020833333333334" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/menu/menu_botton_navigation.xml" value="0.25416666666666665" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />

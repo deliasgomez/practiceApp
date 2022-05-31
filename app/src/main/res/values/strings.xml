@@ -24,5 +24,13 @@
     <string name="registro_new_pass">Contraseña</string>
     <string name="registro_button_to_accept">Aceptar</string>
 
+    // recourses string type in Home_fragment
+
+    // recourses string type in play_fragment
+
+    //recourses string type in search_fragment
+
+    // recourses string type in user_fragment
+
 
 </resources>

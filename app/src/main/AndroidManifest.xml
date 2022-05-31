@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PracticeApp">
+        android:theme="@style/Theme.PracticeApp"
+        android:name=".UserApp">
+
+
         <activity
             android:name=".BuscarActivity"
             android:exported="false"

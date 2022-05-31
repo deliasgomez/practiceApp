@@ -21,14 +21,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_botton_navigation" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/buscar_container_fragment"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/small_size"
+        android:layout_marginEnd="@dimen/small_size"
+        android:layout_marginBottom="@dimen/medium_size"
         android:backgroundTint="@color/buscar_edit_text"
         app:layout_constraintBottom_toTopOf="@+id/buscar_botton_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buscar_botton_navigation"
+        app:layout_constraintStart_toStartOf="@id/buscar_botton_navigation"
         app:layout_constraintTop_toTopOf="parent" />
 
 

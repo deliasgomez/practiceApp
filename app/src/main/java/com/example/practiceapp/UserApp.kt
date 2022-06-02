@@ -1,6 +1,7 @@
 package com.example.practiceapp
 
 import android.app.Application
+import com.example.practiceapp.Database.UserDataBase
 
 
 class UserApp : Application() {

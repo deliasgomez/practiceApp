@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageFilm"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFilmTitle"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginStart="@dimen/small_size"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            tools:text = "Game Of Thrones" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFilmYear"
+            android:layout_marginTop="@dimen/medium_size"
+            android:layout_marginStart="@dimen/small_size"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            tools:text="2012"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFilmActors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_size"
+            android:layout_marginStart="@dimen/small_size"
+            android:textSize="20sp"
+            tools:text="juias robetrs, pedros gtaass, stephen king"/>
+
+    </LinearLayout>
+
+</LinearLayout>

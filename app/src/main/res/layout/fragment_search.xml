@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/white"
@@ -17,9 +16,23 @@
         android:layout_marginTop="@dimen/medium_size"
         android:background="@drawable/style_border"
         android:backgroundTint="@color/buscar_edit_text"
-        android:drawableLeft="@drawable/image_search"
+        android:drawableStart="@drawable/image_search"
         android:hint="Buscar IMDb" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFilms"
+        android:background="@color/buscar_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buscar_edit_text"
+        android:layout_marginTop="@dimen/big_size"/>
 
 
-</FrameLayout>
+
+
+
+
+
+
+
+</LinearLayout>

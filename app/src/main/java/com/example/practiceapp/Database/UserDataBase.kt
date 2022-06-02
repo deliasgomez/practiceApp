@@ -1,4 +1,4 @@
-package com.example.practiceapp
+package com.example.practiceapp.Database
 
 import android.content.Context
 import androidx.room.Database
@@ -20,7 +20,7 @@ import androidx.room.RoomDatabase
                     context.applicationContext,
                     UserDataBase::class.java,
                     "item_database"
-                )
+                ).allowMainThreadQueries()
                     .fallbackToDestructiveMigration()
                     .build()
                 INSTANCE = instance

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.Toast
 import com.example.practiceapp.databinding.ActivityLoginBinding
 
 
@@ -22,10 +23,18 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.loginBtnLogin.setOnClickListener {
-            startActivity(Intent(this, BuscarActivity::class.java))
+            val email = binding.loginEtUser.text.toString()
+            val password= binding.loginEtpass.text.toString()
+            val db = (application as UserApp).database
+            val userdb = db.userDao().getById(email)
+            val email_db = userdb.email
+            val pass_db = userdb.password
+            if (email == email_db && pass_db == password){
+                startActivity(Intent(this, BuscarActivity::class.java))
+            }else{
+                Toast.makeText(this, " Usuario o contraseña incorrecto", Toast.LENGTH_SHORT).show()
+            }
         }
-
-
         binding.loginEtUser.addTextChangedListener(object : TextWatcher{
 
             override fun afterTextChanged(s: Editable?) {}
@@ -49,15 +58,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
         })
-
-
-
-
-
-
     }
-
-
 }
 
 

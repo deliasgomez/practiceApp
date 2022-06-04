@@ -23,17 +23,25 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.loginBtnLogin.setOnClickListener {
-            val email = binding.loginEtUser.text.toString()
-            val password= binding.loginEtpass.text.toString()
+
+            val emaill = binding.loginEtUser.text.toString()
+            val pass = binding.loginEtpass.text.toString()
             val db = (application as UserApp).database
-            val userdb = db.userDao().getById(email)
-            val email_db = userdb.email
-            val pass_db = userdb.password
-            if (email == email_db && pass_db == password){
-                startActivity(Intent(this, BuscarActivity::class.java))
+            val userdb = db.userDao().getById(emaill)
+            val emaildb = userdb.email
+            val passdb = userdb.password
+            if(emaildb.isBlank()){
+                if (emaill == emaildb && passdb == pass){
+                    startActivity(Intent(this, BuscarActivity::class.java))
+                }else{
+                    Toast.makeText(this, " Usuario o contraseña incorrecto", Toast.LENGTH_SHORT).show()
+                }
             }else{
-                Toast.makeText(this, " Usuario o contraseña incorrecto", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
+
+
+
         }
         binding.loginEtUser.addTextChangedListener(object : TextWatcher{
 

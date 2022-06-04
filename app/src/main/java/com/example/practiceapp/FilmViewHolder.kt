@@ -7,10 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class FilmViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    val names = view.findViewById<TextView>(R.id.tvFilmTitle)
-    val year = view.findViewById<TextView>(R.id.tvFilmYear)
-    val actors = view.findViewById<TextView>(R.id.tvFilmActors)
-    val photo = view.findViewById<ImageView>(R.id.imageFilm)
+    private val names = view.findViewById<TextView>(R.id.tvFilmTitle)
+    private val year = view.findViewById<TextView>(R.id.tvFilmYear)
+    private val actors = view.findViewById<TextView>(R.id.tvFilmActors)
+    private val photo = view.findViewById<ImageView>(R.id.imageFilm)
 
     fun render(filmsRecyclerviewSearchModel: FilmsRecyclerviewSearch){
         names.text = filmsRecyclerviewSearchModel.name

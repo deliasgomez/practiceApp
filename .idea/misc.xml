@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13177083333333334" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/border_button.xml" value="0.14635416666666667" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/enabled_color_botton.xml" value="0.1390625" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic__apple.xml" value="0.23796296296296296" />
@@ -12,6 +13,7 @@
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_google_.xml" value="0.14635416666666667" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_icons8_facebook_nuevo.xml" value="0.23796296296296296" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_imdb.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_imdb_svgrepo_com.xml" value="0.13177083333333334" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_img.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/image_home.xml" value="0.2703125" />

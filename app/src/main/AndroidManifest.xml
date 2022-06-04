@@ -24,7 +24,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.PracticeApp"></activity>
+            android:theme="@style/Theme.PracticeApp"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true"

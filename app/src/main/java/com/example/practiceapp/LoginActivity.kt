@@ -23,25 +23,24 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.loginBtnLogin.setOnClickListener {
-
             val emaill = binding.loginEtUser.text.toString()
             val pass = binding.loginEtpass.text.toString()
-            val db = (application as UserApp).database
-            val userdb = db.userDao().getById(emaill)
-            val emaildb = userdb.email
-            val passdb = userdb.password
-            if(emaildb.isBlank()){
-                if (emaill == emaildb && passdb == pass){
-                    startActivity(Intent(this, BuscarActivity::class.java))
-                }else{
-                    Toast.makeText(this, " Usuario o contraseña incorrecto", Toast.LENGTH_SHORT).show()
+            if (emaill.isEmpty() || pass.isEmpty()) {
+                Toast.makeText(this, "Debes ingresar ambos campos para iniciar sesion", Toast.LENGTH_SHORT).show()
+            } else {
+                val db = (application as UserApp).database
+                val userdb = db.userDao().getById(emaill)
+                if (userdb != null) {
+                    val passdb = userdb.password
+                    if (passdb == pass) {
+                        startActivity(Intent(this, BuscarActivity::class.java))
+                    } else {
+                        Toast.makeText(this, "contraseña incorrecta", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this, "El usuario no existe ", Toast.LENGTH_SHORT).show()
                 }
-            }else{
-                Toast.makeText(this,"usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
-
-
-
         }
         binding.loginEtUser.addTextChangedListener(object : TextWatcher{
 

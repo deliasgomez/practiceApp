@@ -23,7 +23,7 @@
         <item name="colorPrimary">#9A9393</item>
     </style>
     <style name="buscar_activity" parent="PracticeApp">
-        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/colorApp</item>
         <item name="colorPrimaryVariant">@color/colorApp</item>
         <item name="colorOnPrimary">@color/black</item>
 

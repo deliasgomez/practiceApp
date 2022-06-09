@@ -8,24 +8,24 @@
     tools:context=".SearchFragment">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/buscar_text_view_search"
+        android:id="@+id/text_view_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/big_size"
-        android:layout_marginEnd="@dimen/big_size"
-        android:layout_marginTop="@dimen/medium_size"
+        android:layout_marginStart="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_10"
         android:background="@drawable/style_border"
-        android:backgroundTint="@color/buscar_edit_text"
-        android:drawableStart="@drawable/image_search"
+        android:backgroundTint="@color/search_edit_text"
+        android:drawableStart="@drawable/vector_search"
         android:hint="Buscar IMDb" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerFilms"
-        android:background="@color/buscar_edit_text"
+        android:background="@color/search_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/buscar_edit_text"
-        android:layout_marginTop="@dimen/big_size"/>
+        android:backgroundTint="@color/search_edit_text"
+        android:layout_marginTop="@dimen/size_20"/>
 
 
 

@@ -5,7 +5,7 @@
             <solid android:color="@color/colorApp"/>
         </shape>
     </item>
-    <item  android:drawable="@drawable/ic_cdnlogo_com_imdbnew"
+    <item  android:drawable="@drawable/vector_logo_imdb"
         android:gravity="center"/>
 
 

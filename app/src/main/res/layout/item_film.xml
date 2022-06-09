@@ -17,16 +17,16 @@
             android:layout_width="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="@dimen/small_size"
-            android:layout_marginStart="@dimen/small_size"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginStart="@dimen/size_5"
             android:layout_height="wrap_content"
 
             android:textSize="20sp"
             tools:text = "Game Of Thrones" />
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvFilmYear"
-            android:layout_marginTop="@dimen/medium_size"
-            android:layout_marginStart="@dimen/small_size"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginStart="@dimen/size_5"
             android:layout_width="wrap_content"
             android:textSize="20sp"
             android:layout_height="wrap_content"
@@ -35,8 +35,8 @@
             android:id="@+id/tvFilmActors"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/medium_size"
-            android:layout_marginStart="@dimen/small_size"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginStart="@dimen/size_5"
             android:textSize="20sp"
             tools:text="juias robetrs, pedros gtaass, stephen king"/>
 

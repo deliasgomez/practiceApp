@@ -5,22 +5,22 @@
 
     <item android:id="@+id/home"
         android:enabled="true"
-        android:icon="@drawable/image_home"
+        android:icon="@drawable/vector_home"
         android:title="Inicio" />
 
     <item android:id="@+id/search"
         android:enabled="true"
-        android:icon="@drawable/image_search"
+        android:icon="@drawable/vector_search"
         android:title="Buscar"/>
 
     <item android:id="@+id/play"
         android:enabled="true"
-        android:icon="@drawable/image_play"
+        android:icon="@drawable/vector_play"
         android:title="play"/>
 
     <item android:id="@+id/perfil"
         android:enabled="true"
-        android:icon="@drawable/image_user"
+        android:icon="@drawable/vector_perfil_user"
         android:title="Juan"/>
 
 

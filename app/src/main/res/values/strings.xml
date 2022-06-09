@@ -9,9 +9,9 @@
     <string name="login_tv_pass">Contraseña</string>
     <string name="login_tv_forgotten_pass"> </string>
     <string name="login_other_options">Ó podes ingresar con</string>
-    <string name="login_botton_face">TODO</string>
-    <string name="login_botton_apple">TODO</string>
-    <string name="login_botton_google">TODO</string>
+    <string name="login_button_face">TODO</string>
+    <string name="login_button_apple">TODO</string>
+    <string name="login_button_google">TODO</string>
     <string name="login_tv_not_registered">¿No tienes cuenta?</string>
     <string name="login_to_register">Registrarse</string>
     <string name="login_to_continued_as_invited">Continuar como invitado</string>
@@ -31,6 +31,13 @@
     //recourses string type in search_fragment
 
     // recourses string type in user_fragment
-
+    <string name="frag_user_name_user">Juan Perez</string>
+    <string name="frag_user_follow_list">Lista de seguimiento</string>
+    <string name="frag_user_follow_list_description">Crea una lista de seguimiento para no perderte ninguna pelicula o serie de tv</string>
+    <string name="frag_user_follow_list_bottom">Empieza una lista de seguimiento</string>
+    <string name="frag_user_recent_views">Vistas recientes</string>
+    <string name="frag_user_recent_views_description">No has visitado ninguna pagina recientemente</string>
+    <string name="frag_user_favorite_persons">Personas favoritas</string>
+    <string name="frag_user_favorite_persons_description">No has agregado ninguna persona como favorita</string>
 
 </resources>

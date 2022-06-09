@@ -9,17 +9,17 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Toast
 import com.example.practiceapp.Database.User
-import com.example.practiceapp.databinding.ActivityRegistroBinding
+import com.example.practiceapp.databinding.ActivityRegisterBinding
 
 
-private lateinit var binding: ActivityRegistroBinding
-class ActivityRegistro : AppCompatActivity() {
+private lateinit var binding: ActivityRegisterBinding
+class ActivityRegister : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.registroTheme)
         super.onCreate(savedInstanceState)
-        binding = ActivityRegistroBinding.inflate(layoutInflater)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.registerBack.setOnClickListener {

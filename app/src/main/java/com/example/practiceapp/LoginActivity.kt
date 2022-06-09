@@ -19,12 +19,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.loginTvRegister.setOnClickListener {
-            startActivity(Intent(this, ActivityRegistro::class.java))
+            startActivity(Intent(this, ActivityRegister::class.java))
         }
 
         binding.loginBtnLogin.setOnClickListener {
             val emaill = binding.loginEtUser.text.toString()
-            val pass = binding.loginEtpass.text.toString()
+            val pass = binding.loginEtPass.text.toString()
             if (emaill.isEmpty() || pass.isEmpty()) {
                 Toast.makeText(this, "Debes ingresar ambos campos para iniciar sesion", Toast.LENGTH_SHORT).show()
             } else {
@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                 if (userdb != null) {
                     val passdb = userdb.password
                     if (passdb == pass) {
-                        startActivity(Intent(this, BuscarActivity::class.java))
+                        startActivity(Intent(this, SearchActivity::class.java))
                     } else {
                         Toast.makeText(this, "contraseña incorrecta", Toast.LENGTH_SHORT).show()
                     }
@@ -47,18 +47,18 @@ class LoginActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (binding.loginEtUser.text?.length!! > 0 && binding.loginEtpass.text?.length!! > 0 ){
+                if (binding.loginEtUser.text?.length!! > 0 && binding.loginEtPass.text?.length!! > 0 ){
                     binding.loginBtnLogin.setBackgroundColor(Color.parseColor("#4B4747"))
                 }else{
                     binding.loginBtnLogin.setBackgroundColor(Color.parseColor("#9D9C9C"))
                 }
             }
         })
-        binding.loginEtpass.addTextChangedListener(object : TextWatcher{
+        binding.loginEtPass.addTextChangedListener(object : TextWatcher{
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (binding.loginEtUser.text?.length!! > 0 && binding.loginEtpass.text?.length!! > 0 ){
+                if (binding.loginEtUser.text?.length!! > 0 && binding.loginEtPass.text?.length!! > 0 ){
                     binding.loginBtnLogin.setBackgroundColor(Color.parseColor("#4B4747"))
                 }else{
                     binding.loginBtnLogin.setBackgroundColor(Color.parseColor("#9D9C9C"))

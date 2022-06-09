@@ -4,37 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuscarActivity">
+    tools:context=".SearchActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/buscar_botton_navigation"
+        android:id="@+id/search_button_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/small_size"
-        android:layout_marginEnd="@dimen/small_size"
-        android:background="@drawable/style_botton_navigation"
+        android:layout_marginStart="@dimen/size_5"
+        android:layout_marginEnd="@dimen/size_5"
+        android:background="@drawable/style_button_navigation"
         android:backgroundTint="@color/colorApp"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:itemTextColor= "@drawable/state_items_menu_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_botton_navigation" />
+        app:menu="@menu/menu_button_navigation" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/small_size"
-        android:layout_marginEnd="@dimen/small_size"
-        android:layout_marginBottom="@dimen/medium_size"
-        android:backgroundTint="@color/buscar_edit_text"
-        app:layout_constraintBottom_toTopOf="@+id/buscar_botton_navigation"
-        app:layout_constraintEnd_toEndOf="@id/buscar_botton_navigation"
-        app:layout_constraintStart_toStartOf="@id/buscar_botton_navigation"
+        android:layout_marginStart="@dimen/size_5"
+        android:layout_marginEnd="@dimen/size_5"
+        android:layout_marginBottom="@dimen/size_10"
+        android:backgroundTint="@color/search_edit_text"
+        app:layout_constraintBottom_toTopOf="@+id/search_button_navigation"
+        app:layout_constraintEnd_toEndOf="@id/search_button_navigation"
+        app:layout_constraintStart_toStartOf="@id/search_button_navigation"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

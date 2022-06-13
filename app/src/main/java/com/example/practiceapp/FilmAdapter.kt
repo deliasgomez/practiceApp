@@ -8,7 +8,7 @@ class FilmAdapter(private val filmsList: List<FilmsRecyclerviewSearch>) : Recycl
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_film, parent, false)
+            .inflate(R.layout.view_recycler_frag_search, parent, false)
 
         return FilmViewHolder(view)
     }

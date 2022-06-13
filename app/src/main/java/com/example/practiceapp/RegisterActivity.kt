@@ -32,9 +32,9 @@ class ActivityRegister : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (binding.registerEtPass.text?.length!! > 0 && binding.registerEtEmail.text?.length!! > 0 && binding.registerEtEmail.text?.length!! > 0 ){
-                    binding.registerBtnAceptar.setBackgroundColor(Color.parseColor("#4B4747"))
+                    binding.registerBtnAccept.setBackgroundColor(Color.parseColor("#4B4747"))
                 }else{
-                    binding.registerBtnAceptar.setBackgroundColor(Color.parseColor("#9D9C9C"))
+                    binding.registerBtnAccept.setBackgroundColor(Color.parseColor("#9D9C9C"))
                 }
             }
         })
@@ -44,9 +44,9 @@ class ActivityRegister : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (binding.registerEtPass.text?.length!! > 0 && binding.registerEtEmail.text?.length!! > 0 && binding.registerEtEmail.text?.length!! > 0 ){
-                    binding.registerBtnAceptar.setBackgroundColor(Color.parseColor("#4B4747"))
+                    binding.registerBtnAccept.setBackgroundColor(Color.parseColor("#4B4747"))
                 }else{
-                    binding.registerBtnAceptar.setBackgroundColor(Color.parseColor("#9D9C9C"))
+                    binding.registerBtnAccept.setBackgroundColor(Color.parseColor("#9D9C9C"))
                 }
             }
         })
@@ -56,13 +56,13 @@ class ActivityRegister : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (binding.registerEtPass.text?.length!! > 0 && binding.registerEtEmail.text?.length!! > 0 && binding.registerEtEmail.text?.length!! > 0 ){
-                    binding.registerBtnAceptar.setBackgroundColor(Color.parseColor("#4B4747"))
+                    binding.registerBtnAccept.setBackgroundColor(Color.parseColor("#4B4747"))
                 }else{
-                    binding.registerBtnAceptar.setBackgroundColor(Color.parseColor("#9D9C9C"))
+                    binding.registerBtnAccept.setBackgroundColor(Color.parseColor("#9D9C9C"))
                 }
             }
         })
-        binding.registerBtnAceptar.setOnClickListener{
+        binding.registerBtnAccept.setOnClickListener{
             val name = binding.registerEtName.text.toString()
             val email = binding.registerEtEmail.text.toString()
             val password = binding.registerEtPass.text.toString()

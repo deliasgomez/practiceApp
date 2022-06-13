@@ -7,7 +7,7 @@
     <string name="buttonText">Login</string>
     <string name="login_tv_user">Usuario</string>
     <string name="login_tv_pass">Contraseña</string>
-    <string name="login_tv_forgotten_pass"> </string>
+    <string name="login_tv_forgotten_pass">¿Olvidaste tu contraseña?</string>
     <string name="login_other_options">Ó podes ingresar con</string>
     <string name="login_button_face">TODO</string>
     <string name="login_button_apple">TODO</string>
@@ -18,17 +18,21 @@
 
     //recourses String types in RegistroActivity
 
-    <string name="registro_new_user">Crear una cuenta</string>
-    <string name="registro_new_user_name">Nombre</string>
-    <string name="registro_new_email">Correo electronico</string>
-    <string name="registro_new_pass">Contraseña</string>
-    <string name="registro_button_to_accept">Aceptar</string>
+    <string name="register_new_user">Crear una cuenta</string>
+    <string name="register_new_user_name">Nombre</string>
+    <string name="register_new_email">Correo electronico</string>
+    <string name="register_new_pass">Contraseña</string>
+    <string name="register_button_to_accept">Aceptar</string>
+    <string name="register_helper_text">La contraseña debe contener 8 caracteres</string>
 
     // recourses string type in Home_fragment
+    <string name="frag_home_film_name">Sinic</string>
+    <string name="frag_home_film_trailer">Trailer oficial</string>
 
     // recourses string type in play_fragment
 
     //recourses string type in search_fragment
+    <string name="frag_search_tv_search">Buscar IMDb</string>
 
     // recourses string type in user_fragment
     <string name="frag_user_name_user">Juan Perez</string>

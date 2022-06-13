@@ -17,7 +17,7 @@
         android:background="@drawable/style_border"
         android:backgroundTint="@color/search_edit_text"
         android:drawableStart="@drawable/vector_search"
-        android:hint="Buscar IMDb" />
+        android:hint="@string/frag_search_tv_search" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerFilms"

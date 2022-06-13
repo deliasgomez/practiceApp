@@ -26,20 +26,16 @@ class LoginActivity : AppCompatActivity() {
             val emaill = binding.loginEtUser.text.toString()
             val pass = binding.loginEtPass.text.toString()
             if (emaill.isEmpty() || pass.isEmpty()) {
-                Toast.makeText(this, "Debes ingresar ambos campos para iniciar sesion", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Llenar todos los campos", Toast.LENGTH_SHORT).show()
             } else {
                 val db = (application as UserApp).database
-                val userdb = db.userDao().getById(emaill)
-                if (userdb != null) {
-                    val passdb = userdb.password
-                    if (passdb == pass) {
-                        startActivity(Intent(this, SearchActivity::class.java))
-                    } else {
-                        Toast.makeText(this, "contraseña incorrecta", Toast.LENGTH_SHORT).show()
-                    }
-                } else {
-                    Toast.makeText(this, "El usuario no existe ", Toast.LENGTH_SHORT).show()
+                val userDb = db.userDao().getByIDAnDPass(emaill,pass)
+                if (userDb != null){
+                    startActivity(Intent(this, SearchActivity::class.java))
+                }else{
+                    Toast.makeText(this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show()
                 }
+
             }
         }
         binding.loginEtUser.addTextChangedListener(object : TextWatcher{

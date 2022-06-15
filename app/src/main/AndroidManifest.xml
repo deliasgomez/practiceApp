@@ -18,9 +18,9 @@
             android:exported="false"
             android:theme="@style/buscar_activity"/>
         <activity
-            android:name=".ActivityRegister"
+            android:name= ".RegisterActivity"
             android:exported="false"
-            android:theme="@style/registroTheme" />
+            android:theme="@style/registerTheme" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"

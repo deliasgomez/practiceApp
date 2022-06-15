@@ -32,7 +32,7 @@
             android:textSize="@dimen/size_text_20"
             android:layout_marginStart="@dimen/size_40"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginImageOne" />
+            app:layout_constraintTop_toBottomOf="@id/loginImageOne" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginEtUser"
@@ -46,8 +46,8 @@
             android:textSize="@dimen/size_text_20"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/loginTvUser"
-            app:layout_constraintTop_toBottomOf="@+id/loginTvUser"
+            app:layout_constraintStart_toStartOf="@id/loginTvUser"
+            app:layout_constraintTop_toBottomOf="@id/loginTvUser"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -60,7 +60,7 @@
             android:layout_marginStart="@dimen/size_40"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginEtUser" />
+            app:layout_constraintTop_toBottomOf="@id/loginEtUser" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginEtPass"
@@ -75,7 +75,7 @@
             android:layout_marginEnd="@dimen/size_40"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginTvPass"
+            app:layout_constraintTop_toBottomOf="@id/loginTvPass"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -86,8 +86,8 @@
             android:textSize="@dimen/size_text_18"
             android:text="@string/login_tv_forgotten_pass"
             android:textStyle="italic"
-            app:layout_constraintStart_toStartOf="@+id/loginEtPass"
-            app:layout_constraintTop_toBottomOf="@+id/loginEtPass" />
+            app:layout_constraintStart_toStartOf="@id/loginEtPass"
+            app:layout_constraintTop_toBottomOf="@id/loginEtPass" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/loginBtnLogin"
@@ -103,8 +103,8 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold"
             app:cornerRadius="@dimen/size_10"
-            app:layout_constraintStart_toStartOf="@+id/loginTvForget"
-            app:layout_constraintTop_toBottomOf="@+id/loginTvForget" />
+            app:layout_constraintStart_toStartOf="@id/loginTvForget"
+            app:layout_constraintTop_toBottomOf="@id/loginTvForget" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginTvOtherOptions"
@@ -117,7 +117,7 @@
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginBtnLogin" />
+            app:layout_constraintTop_toBottomOf="@id/loginBtnLogin" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/loginFabApple"
@@ -127,12 +127,12 @@
             android:backgroundTint="@color/white"
             android:src="@drawable/vector_logo_apple"
             app:fabSize="auto"
-            app:layout_constraintBottom_toBottomOf="@+id/loginFabFacebook"
+            app:layout_constraintBottom_toBottomOf="@id/loginFabFacebook"
             app:layout_constraintEnd_toStartOf="@id/loginFabFacebook"
-            app:layout_constraintTop_toTopOf="@+id/loginFabFacebook"
+            app:layout_constraintTop_toTopOf="@id/loginFabFacebook"
             app:tint="@null"
             tools:ignore="SpeakableTextPresentCheck"
-            android:contentDescription="@string/login_button_apple" />
+            android:contentDescription="@string/login_image_apple_description"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/loginFabGoogle"
@@ -143,12 +143,12 @@
             android:backgroundTint="@color/white"
             android:src="@drawable/vector_logo_google"
             app:fabSize="normal"
-            app:layout_constraintBottom_toBottomOf="@+id/loginFabFacebook"
+            app:layout_constraintBottom_toBottomOf="@id/loginFabFacebook"
             app:layout_constraintStart_toEndOf="@id/loginFabFacebook"
             app:layout_constraintTop_toTopOf="@id/loginFabFacebook"
             app:tint="@null"
             tools:ignore="SpeakableTextPresentCheck"
-            android:contentDescription="@string/login_button_google" />
+            android:contentDescription="@string/login_image_google_description"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/loginFabFacebook"
@@ -158,12 +158,12 @@
             android:backgroundTint="@color/white"
             android:src="@drawable/vector_logo_facebook"
             app:fabSize="normal"
-            app:layout_constraintEnd_toEndOf="@+id/loginTvOtherOptions"
+            app:layout_constraintEnd_toEndOf="@id/loginTvOtherOptions"
             app:layout_constraintStart_toStartOf="@id/loginTvOtherOptions"
             app:layout_constraintTop_toBottomOf="@id/loginTvOtherOptions"
             app:tint="@null"
             tools:ignore="SpeakableTextPresentCheck"
-            android:contentDescription="@string/login_button_face" />
+            android:contentDescription="@string/login_image_facebook_description"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginTvAsk"
@@ -175,7 +175,7 @@
             android:textStyle="italic"
             app:layout_constraintEnd_toStartOf="@id/loginTvRegister"
             app:layout_constraintStart_toStartOf="@id/loginBtnLogin"
-            app:layout_constraintTop_toBottomOf="@+id/loginFabFacebook" />
+            app:layout_constraintTop_toBottomOf="@id/loginFabFacebook" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginTvRegister"
@@ -187,7 +187,7 @@
             android:textSize="@dimen/size_text_20"
             android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="@id/loginBtnLogin"
-            app:layout_constraintStart_toEndOf="@+id/loginTvAsk"
+            app:layout_constraintStart_toEndOf="@id/loginTvAsk"
             app:layout_constraintTop_toBottomOf="@id/loginFabGoogle" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -202,6 +202,6 @@
             android:textSize="@dimen/size_text_18"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginTvAsk" />
+            app:layout_constraintTop_toBottomOf="@id/loginTvAsk" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

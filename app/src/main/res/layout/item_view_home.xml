@@ -30,7 +30,7 @@
         android:textSize="@dimen/size_text_20"
         android:layout_marginStart="@dimen/size_20"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/punctuation_view"
+        app:layout_constraintTop_toBottomOf="@id/punctuation_view"
         tools:text="the stranger things"/>
 
     <com.google.android.material.textview.MaterialTextView

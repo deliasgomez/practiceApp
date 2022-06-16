@@ -65,6 +65,7 @@
         android:id="@+id/frag_user_tv_list_follow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/size_5"
         android:drawableStart="@drawable/yellow_bar"
         android:text="@string/frag_user_follow_list"
         android:textColor="@color/black"

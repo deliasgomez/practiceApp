@@ -28,7 +28,15 @@
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/state_items_menu_navigation.xml" value="0.12222222222222222" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/style_border.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/style_botton_navigation.xml" value="0.2703125" />
-        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/style_button_navigation.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_home.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_info.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_logo_facebook.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_logo_imdb.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_profile_user.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_search.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_settings.xml" value="0.2703125" />
+        <entry key="..\:/proyectos android/practiceApp/app/src/main/res/drawable/vector_start.xml" value="0.2703125" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/activity_buscar.xml" value="0.21875" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/activity_login.xml" value="0.21829710144927536" />
         <entry key="..\:/proyectos android/practiceApp/app/src/main/res/layout/activity_main.xml" value="0.2" />

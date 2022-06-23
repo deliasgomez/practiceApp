@@ -25,7 +25,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/frag_user_user_name"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/frag_user_name_user"
             android:layout_marginTop="@dimen/size_20"
@@ -60,8 +60,10 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/frag_user_recyclerView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/size_30"
             app:layout_constraintTop_toBottomOf="@id/frag_user_user_name"
@@ -94,8 +96,10 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/frag_user_tv_list_follow_description"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
             android:layout_marginTop="@dimen/size_10"
             android:text="@string/frag_user_follow_list_description"
             android:textSize="@dimen/size_text_15"
@@ -105,8 +109,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/frag_user_tv_list_follow_bottom"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
             android:background="@drawable/style_border"
             android:backgroundTint="@color/colorApp"
             android:layout_marginTop="@dimen/size_10"
@@ -143,8 +149,10 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/frag_user_tv_recent_views_description"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_20"
             android:layout_marginTop="@dimen/size_10"
             android:text="@string/frag_user_recent_views_description"
             android:textSize="@dimen/size_text_15"
@@ -178,8 +186,10 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/frag_user_tv_favorite_persons_description"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
             android:layout_marginTop="@dimen/size_5"
             android:text="@string/frag_user_favorite_persons_description"
             android:textSize="@dimen/size_text_15"

@@ -11,20 +11,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.practiceapp.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment() {
-    private var binding : FragmentSearchBinding? = null
+    private var _binding : FragmentSearchBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSearchBinding.inflate(inflater,container,false)
-        return binding!!.root
+        _binding = FragmentSearchBinding.inflate(inflater,container,false)
+        return binding.root
     }
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
         val manager = LinearLayoutManager(context)
         val decoration = DividerItemDecoration(context,manager.orientation)
-        binding!!.recyclerFilms.layoutManager = manager
-        binding!!.recyclerFilms.adapter = MoviesSearchAdapter(MoviesProvider.films)
-        binding!!.recyclerFilms.addItemDecoration(decoration)
+        binding.recyclerFilms.layoutManager = manager
+        binding.recyclerFilms.adapter = MoviesSearchAdapter(MoviesProvider.films)
+        binding.recyclerFilms.addItemDecoration(decoration)
     }
 }

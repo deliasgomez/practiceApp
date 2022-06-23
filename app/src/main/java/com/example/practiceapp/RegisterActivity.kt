@@ -30,7 +30,7 @@ class RegisterActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                Utils().fullFieldsregister(
+                Utils().fullFieldsRegister(
                     binding.registerEtName,
                     binding.registerEtEmail,
                     binding.registerEtPass,
@@ -42,7 +42,7 @@ class RegisterActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                Utils().fullFieldsregister(
+                Utils().fullFieldsRegister(
                     binding.registerEtName,
                     binding.registerEtEmail,
                     binding.registerEtPass,
@@ -54,7 +54,7 @@ class RegisterActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                Utils().fullFieldsregister(
+                Utils().fullFieldsRegister(
                     binding.registerEtName,
                     binding.registerEtEmail,
                     binding.registerEtPass,

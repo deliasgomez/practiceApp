@@ -12,7 +12,7 @@ class Utils {
             bottom.setBackgroundColor(Color.parseColor("#9D9C9C"))
         }
     }
-    fun fullFieldsregister(view1: EditText,view2: EditText,view3: EditText,bottom: Button){
+    fun fullFieldsRegister(view1: EditText,view2: EditText,view3: EditText,bottom: Button){
         if (view1.text?.length!! > 0 && view2.text?.length!! > 0 && view3.text?.length!! > 0 ){
             bottom.setBackgroundColor(Color.parseColor("#4B4747"))
         }else{

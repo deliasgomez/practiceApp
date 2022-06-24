@@ -1,7 +1,7 @@
 package com.example.practiceapp
 
 data class Cards(
-    val name : String,
-    val function : String,
+    val function: String,
+    val resume : String,
     val totalFunctions : Int
 )

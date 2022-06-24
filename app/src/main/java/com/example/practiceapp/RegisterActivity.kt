@@ -71,6 +71,7 @@ class RegisterActivity : AppCompatActivity() {
                 db.userDao().insert(User(name, email, password))
                 Toast.makeText(this, "Usuario agregado", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, LoginActivity::class.java))
+                finish()
             } catch (e: SQLiteConstraintException) {
                 Toast.makeText(this, "El usuario ya existe", Toast.LENGTH_SHORT).show()
 

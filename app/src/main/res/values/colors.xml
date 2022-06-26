@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorApp">#F6C700</color>
-    <color name="buttonEmptytext">#9D9C9C</color>
+    <color name="buttonEmptyText">#9D9C9C</color>
     <color name="buttonFulltext">#4B4747</color>
-    <color name="buscar_edit_text">#F5F5F5</color>
+    <color name="search_edit_text">#F5F5F5</color>
 </resources>

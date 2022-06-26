@@ -2,35 +2,47 @@
 
     <string name="app_name">practiceApp</string>
 
-    // recourses string types in LoginActivity
+    // recourses string type in LoginActivity
 
     <string name="buttonText">Login</string>
     <string name="login_tv_user">Usuario</string>
     <string name="login_tv_pass">Contraseña</string>
-    <string name="login_tv_forgotten_pass"> </string>
+    <string name="login_tv_forgotten_pass">¿Olvidaste tu contraseña?</string>
     <string name="login_other_options">Ó podes ingresar con</string>
-    <string name="login_botton_face">TODO</string>
-    <string name="login_botton_apple">TODO</string>
-    <string name="login_botton_google">TODO</string>
+    <string name="login_image_facebook_description">Logo facebook</string>
+    <string name="login_image_apple_description">Logo apple</string>
+    <string name="login_image_google_description">Logo Google</string>
     <string name="login_tv_not_registered">¿No tienes cuenta?</string>
     <string name="login_to_register">Registrarse</string>
     <string name="login_to_continued_as_invited">Continuar como invitado</string>
 
-    //recourses String types in RegistroActivity
+    //recourses String type in RegisterActivity
 
-    <string name="registro_new_user">Crear una cuenta</string>
-    <string name="registro_new_user_name">Nombre</string>
-    <string name="registro_new_email">Correo electronico</string>
-    <string name="registro_new_pass">Contraseña</string>
-    <string name="registro_button_to_accept">Aceptar</string>
+    <string name="register_new_user">Crear una cuenta</string>
+    <string name="register_new_user_name">Nombre</string>
+    <string name="register_new_email">Correo electronico</string>
+    <string name="register_new_pass">Contraseña</string>
+    <string name="register_button_to_accept">Aceptar</string>
+    <string name="register_helper_text">La contraseña debe contener 8 caracteres</string>
 
     // recourses string type in Home_fragment
+
+    <string name="frag_home_film_name">Sonic</string>
+    <string name="frag_home_film_trailer">Trailer oficial</string>
 
     // recourses string type in play_fragment
 
     //recourses string type in search_fragment
+    <string name="frag_search_tv_search">Buscar IMDb</string>
 
     // recourses string type in user_fragment
-
+    <string name="frag_user_name_user">Juan Perez</string>
+    <string name="frag_user_follow_list">Lista de seguimiento</string>
+    <string name="frag_user_follow_list_description">Crea una lista de seguimiento para no perderte ninguna pelicula o serie de tv</string>
+    <string name="frag_user_follow_list_bottom">Empieza una lista de seguimiento</string>
+    <string name="frag_user_recent_views">Vistas recientes</string>
+    <string name="frag_user_recent_views_description">No has visitado ninguna pagina recientemente</string>
+    <string name="frag_user_favorite_persons">Personas favoritas</string>
+    <string name="frag_user_favorite_persons_description">No has agregado ninguna persona como favorita</string>
 
 </resources>

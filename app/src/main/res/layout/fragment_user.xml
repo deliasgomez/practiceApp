@@ -1,24 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/teal_200"
-    android:layout_height="match_parent"
-    tools:context=".UserFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hi I am the Userfragment"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:context=".UserFragment">
 
-        />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/frag_user_user_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/vector_profile_user"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/frag_user_name_user"
+            android:layout_marginTop="@dimen/size_20"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/size_10"
+            android:textSize="@dimen/size_text_20"
+            app:layout_constraintStart_toEndOf="@id/frag_user_user_photo"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/frag_user_iv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:background="@drawable/vector_settings"
+            android:backgroundTint="@color/colorApp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_5"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@color/search_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_user_photo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frag_user_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/size_30"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_user_name"
+            app:layout_constraintStart_toStartOf="@id/frag_user_user_photo"
+            app:layout_constraintEnd_toEndOf="@+id/frag_user_iv_settings" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@color/search_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_recyclerView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_tv_list_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/size_5"
+            android:drawableStart="@drawable/yellow_bar"
+            android:text="@string/frag_user_follow_list"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/size_60"
+            android:textSize="@dimen/size_text_20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/frag_user_recyclerView"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_recyclerView"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_tv_list_follow_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/frag_user_follow_list_description"
+            android:textSize="@dimen/size_text_15"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_list_follow"
+            app:layout_constraintEnd_toEndOf="@id/frag_user_recyclerView"
+            app:layout_constraintStart_toStartOf="@id/frag_user_recyclerView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/frag_user_tv_list_follow_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:background="@drawable/style_border"
+            android:backgroundTint="@color/colorApp"
+            android:layout_marginTop="@dimen/size_10"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/size_text_18"
+            android:text="@string/frag_user_follow_list_bottom"
+            app:layout_constraintStart_toStartOf="@id/frag_user_tv_list_follow_description"
+            app:layout_constraintEnd_toEndOf="@id/frag_user_tv_list_follow_description"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_list_follow_description" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@color/search_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_list_follow_bottom"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_tv_recent_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/size_5"
+            android:drawableStart="@drawable/yellow_bar"
+            android:text="@string/frag_user_recent_views"
+            android:layout_marginTop="@dimen/size_60"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/frag_user_tv_list_follow_bottom"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_list_follow_bottom"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_tv_recent_views_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="@string/frag_user_recent_views_description"
+            android:textSize="@dimen/size_text_15"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_recent_views"
+            app:layout_constraintEnd_toEndOf="@id/frag_user_tv_list_follow_bottom"
+            app:layout_constraintStart_toStartOf="@id/frag_user_tv_list_follow_bottom" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@color/search_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_recent_views_description"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_tv_favorite_persons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/size_5"
+            android:drawableStart="@drawable/yellow_bar"
+            android:text="@string/frag_user_favorite_persons"
+            android:layout_marginTop="@dimen/size_60"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/frag_user_tv_list_follow_bottom"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_recent_views_description"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/frag_user_tv_favorite_persons_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_5"
+            android:text="@string/frag_user_favorite_persons_description"
+            android:textSize="@dimen/size_text_15"
+            app:layout_constraintTop_toBottomOf="@id/frag_user_tv_favorite_persons"
+            app:layout_constraintEnd_toEndOf="@id/frag_user_tv_list_follow_bottom"
+            app:layout_constraintStart_toStartOf="@id/frag_user_tv_list_follow_bottom"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

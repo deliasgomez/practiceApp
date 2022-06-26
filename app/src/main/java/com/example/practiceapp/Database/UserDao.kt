@@ -12,4 +12,7 @@ interface  UserDao {
     @Insert
     fun insert(user: User)
 
+    @Query("SELECT * FROM user WHERE email = :email and password = :password")
+    fun getByIdAndPass(email: String, password : String ): User
+
 }

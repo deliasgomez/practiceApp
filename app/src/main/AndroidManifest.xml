@@ -14,13 +14,13 @@
 
 
         <activity
-            android:name=".BuscarActivity"
+            android:name=".SearchActivity"
             android:exported="false"
             android:theme="@style/buscar_activity"/>
         <activity
-            android:name=".ActivityRegistro"
+            android:name= ".RegisterActivity"
             android:exported="false"
-            android:theme="@style/registroTheme" />
+            android:theme="@style/registerTheme" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"

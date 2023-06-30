@@ -15,6 +15,6 @@ class CardsAdapter(private val cardList: List<Cards>) : RecyclerView.Adapter<Car
         val item = cardList[position]
         holder.render(item)
     }
-    override fun getItemCount(): Int = cardList.size
+    override fun getItemCount(): Int =  cardList.size
 
 }
